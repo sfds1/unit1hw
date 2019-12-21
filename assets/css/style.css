@@ -4,7 +4,7 @@
   width: 100%;
   height: 75px;
   border-style: solid;
-  border-width: 5px black;
+  border-width: 2px #cccccc;
   background: #ffffff;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -52,8 +52,9 @@
 }
 .body{
 
-  background-color:lightgray;
- 
+/* use a background downloaded from (https://subtlepatterns.com/) */
+
+  background-image: url("./../images/interlaced.png");
 }
 
 
@@ -63,7 +64,7 @@
   top: 76px;
   margin: 50px 300px;
   background-color: white;
-  width: 1000px;
+  width: 960px;
   height: 500px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -95,9 +96,89 @@ color: #4aaaa5;
   bottom: 0;
   width: 100%;
   height: 35px;
+  border-top: 8px solid #4aaaa5;
   text-align: center;
-  border: 3px green;
-  background-color: darkgrey;
+  background-color: #666666;
   z-index:3;
 }
+
+
+/* for contact page */
+
+
+.contact-box{
+
+  position: fixed;
+  top: 76px;
+  margin: 50px 300px;
+  background-color: white;
+  width: 960px;
+  height: 600px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a blue color */
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+/* Add some padding around the form  */
+.contact-form {
+  padding: 0 20px;
+}
+
+/* Portfolio Page */
+
+.portfolio{
+
+  padding: 10px;
+}
+
+
+.project-div{
+
+  float: left;
+  border: 10px black;
+}
+.pic{
+position: relative;
+width:150px;
+height: 150px;
+margin: 10px;
+
+}
+
+.banner{
+position: absolute;
+bottom: 350px;
+width: 150px;
+color: white;
+background-color: #4aaaa5;
+
+
+}
+
 
