@@ -1,3 +1,6 @@
+
+/* styling for top navigation bar */
+
 .top-nav-bar {
   position: fixed;
   top: 0;
@@ -9,6 +12,7 @@
 
   
 }
+/* Styling for name on left side of nav bar */
 
 .top-nav-name {
   position: fixed;
@@ -25,6 +29,8 @@
 
 }
 
+/* Div area around About, Contact & Portfolio buttons */
+
 .top-nav-buttons{
   position: relative;
   top:0;
@@ -38,6 +44,8 @@
 
 }
 
+/* Vertical line in between About & Portfolio button */
+
 .vl1{
   position:absolute;
   top:15px;
@@ -47,6 +55,8 @@
 
 }
 
+/* =Vertical line in between Portfolio & Contact button */
+
 .vl2{
   position:absolute;
   top:15px;
@@ -55,6 +65,7 @@
   height: 20px;
 }
 
+/* About, Contact & Portfolio buttons */
 
 .btn {
   border: none;
@@ -66,6 +77,8 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #777777;
 }
+
+/* Line to break text */
 
   hr {
     display: block;
@@ -79,11 +92,13 @@
 /* use a background downloaded from (https://subtlepatterns.com/) */
 
   background-image: url("./../images/interlaced.png");
+
+  display: flex;
+  flex-direction: column;
 }
 
 
 .about-me-box{
-
   position: fixed;
   top: 76px;
   margin: 50px 300px;
@@ -91,6 +106,7 @@
   width: 960px;
   height: 500px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px solid #dddddd;
 
 }
 
@@ -117,17 +133,23 @@ color: #4aaaa5;
   margin: 0px 20px 20px 20px;
 }
 
-.footer{
+
+.footer-box{
   position: fixed;
-  bottom: 0;
+  bottom: 0; 
+  flex: 1 0 auto;
   width: 100%;
-  height: 35px;
+  height: 25px;
   border-top: 8px solid #4aaaa5;
   text-align: center;
+  padding: 5px;
   background-color: #666666;
   z-index:3;
 }
 
+.footer {
+  flex-shrink: 0;
+}
 
 /* for contact page */
 
@@ -142,6 +164,7 @@ color: #4aaaa5;
   height: 600px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #777777;
+  border: 1px solid #dddddd;
 
 }
 
@@ -177,19 +200,22 @@ input[type=submit]:hover {
   padding: 0 20px;
 }
 
-/* Portfolio Page */
+/* For Portfolio Page */
 
-.portfolio{
+.portfolio-box{
 
   padding: 10px;
+  border: 1px solid #dddddd;
+
 }
 
-
 .project-div{
-
   float: left;
   border: 10px black;
 }
+
+/* stylig for pictures */
+
 .pic{
 position: relative;
 width: 250px;
@@ -199,6 +225,7 @@ border: 1px solid #ccc; /* Gray border */
 
 }
 
+/* styling for text over pictures */
 .banner{
 position: absolute;
 bottom: 220px;
